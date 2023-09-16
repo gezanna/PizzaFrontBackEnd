@@ -23,11 +23,11 @@ jobs:
 
       - name: Push Docker Frontend image to Azure Container Registry
         run: |
-            docker tag pizzafrontend:latest natnacr.azurecr.io/pizzafrontend:${{ github.sha }}
-            docker push natnacr.azurecr.io/pizzafrontend:${{ github.sha }}            
+            docker tag pizzafrontend:latest natnacr.azurecr.io/pizzafrontend:v1
+            docker push natnacr.azurecr.io/pizzafrontend:v1         
 
       - name: Push Docker Backend image to Azure Container Registry
         run: |
-            docker tag pizzabackend:latest natnacr.azurecr.io/pizzabackend:${{ github.sha }}
-            docker push natnacr.azurecr.io/pizzabackend:${{ github.sha }}
+            docker tag pizzabackend:latest natnacr.azurecr.io/pizzabackend:v1
+            docker push natnacr.azurecr.io/pizzabackend:v1
 
