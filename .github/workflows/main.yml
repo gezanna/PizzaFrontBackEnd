@@ -23,6 +23,6 @@ jobs:
 
       - name: Push Docker image to Azure Container Registry
         run: |
-            docker tag mydemoapp:latest ${{ secrets.ACR_REGISTRY_NAME }}.azurecr.io/mydemoapp:${{ github.sha }}
-            docker push ${{ secrets.ACR_REGISTRY_NAME }}.azurecr.io/mydemoapp:${{ github.sha }}            
+            docker tag pizza:latest ${{ secrets.REGISTRY_LOGIN_SERVER }}.azurecr.io/pizza:${{ github.sha }}
+            docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}.azurecr.io/pizza:${{ github.sha }}            
 
