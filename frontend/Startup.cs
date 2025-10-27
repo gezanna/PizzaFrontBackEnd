@@ -50,6 +50,7 @@ namespace frontend
                 app.UseHsts();
             }
 
+            // some additional test
             app.UseStaticFiles();
 
             app.UseRouting();
