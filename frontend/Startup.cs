@@ -57,6 +57,8 @@ namespace frontend
 
             app.UseAuthorization();
 
+
+            // some updates that needs to be seen on the PR build
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
