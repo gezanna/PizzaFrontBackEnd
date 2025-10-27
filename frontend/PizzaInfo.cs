@@ -2,6 +2,9 @@ using System;
 
 namespace frontend
 {
+    /// <summary>
+    /// This are some initial test
+    /// </summary>
     public class PizzaInfo
     {
         public string PizzaName { get; set; }
