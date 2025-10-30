@@ -50,7 +50,8 @@ namespace frontend
                 app.UseHsts();
 
                 var testing = "some test";
-                
+                var me = "yoni";
+
             }
 
             // some additional test
