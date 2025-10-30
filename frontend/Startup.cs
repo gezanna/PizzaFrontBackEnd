@@ -35,6 +35,7 @@ namespace frontend
 
         }
 
+        // sample method that we may use.
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -47,14 +48,18 @@ namespace frontend
                 app.UseExceptionHandler("/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
+                app.UseHsts();
             }
 
+            // some additional test
             app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseAuthorization();
 
+
+            // some updates that needs to be seen on the PR build
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
