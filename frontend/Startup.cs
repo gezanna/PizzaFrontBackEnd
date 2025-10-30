@@ -51,6 +51,8 @@ namespace frontend
 
                 var testing = "some test";
                 var me = "yoni";
+                var anotherMe = "yoni";
+                
 
             }
 
