@@ -49,10 +49,11 @@ namespace frontend
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
 
-                // this is my second update
-                app.UseHsts();
+                var testing = "some test";
+                var me = "yoni";
+                var anotherMe = "yoni";
+                
 
-                var test = "some information";
             }
 
             // some additional test
