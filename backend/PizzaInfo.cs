@@ -8,8 +8,11 @@ namespace backend
 
         public int Cost { get; set; }
 
+        // my other comments
         public string Ingredients { get; set; }
 
+        // my comments
         public string InStock { get; set; }
+        
     }
 }
