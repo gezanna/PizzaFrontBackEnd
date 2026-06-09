@@ -10,7 +10,7 @@
 # supported CodeQL languages.
 #
 name: "CodeQL Advanced"
-
+description: CodeQL advanced added as a custom change
 on:
   push:
     branches: [ "main" ]
